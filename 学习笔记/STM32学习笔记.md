@@ -232,7 +232,7 @@ delay_ms(10);
 
 - 线 0~15：对应外部 IO 口的输入中断。线 16：连接到 PVD 输出。线 17：连接到 RTC 闹钟事件。线 18：连接到 USB 唤醒事件。
 
-- GPIO 的管教`GPIOx.0~GPIOx.15(x=A,B,C,D,E，F,G)`分别对应中断线 15~0。
+- GPIO 的管脚`GPIOx.0~GPIOx.15(x=A,B,C,D,E，F,G)`分别对应中断线 15~0。 
 
 - 配置 GPIO 与中断线的映射关系的函数 GPIO_EXTILineConfig()来实现的：
   `void GPIO_EXTILineConfig(uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)`
@@ -251,4 +251,5 @@ delay_ms(10);
   //参数初始化外设 EXTI 寄存器
   ```
 
-  
+  ## 5. STM32时钟系统
+
